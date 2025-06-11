@@ -256,7 +256,10 @@ class Any
     }
 
   private:
-    std::variant<bool, Number, std::string, Null, std::unique_ptr<Object>, std::unique_ptr<List>> value_;
+    std::variant<bool, Number, std::string, Null, std::unique_ptr<Object>, std::unique_ptr<List> 
+    #ifdef UNITTEST
+    , InvalidType
+    #endif> value_;
 };
 
 }  // namespace json
