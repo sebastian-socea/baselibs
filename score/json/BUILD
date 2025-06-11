@@ -106,6 +106,7 @@ alias(
     actual = ":json",
     visibility = [
         # "@ddad@score-baselibs//score/json:__subpackages__",
+        "//visibility:public"
     ],
 )
 
