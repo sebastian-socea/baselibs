@@ -51,6 +51,7 @@ cc_library(
     tags = ["FFI"],
     visibility = [
         "@score-baselibs//score/json:__subpackages__",
+        "//visibility:public"
     ],
     deps = [
         "@score-baselibs//score/filesystem/filestream",
